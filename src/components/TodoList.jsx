@@ -5,14 +5,16 @@ const TodoList = () => {
   const filteredTodos = useSelector((state) => {
     const todos = state.todos;
     const filter = state.filter;
+    const searchTerm = state.searchTerm.toLowerCase();
 
     return todos.filter((todo) => {
       const matchesFilter =
         (filter === "COMPLETED" && todo.completed) ||
         (filter === "INCOMPLETE" && !todo.completed) ||
         filter === "ALL";
+      const matchesSearch = todo.text.toLowerCase().includes(searchTerm);
 
-      return matchesFilter;
+      return matchesFilter && matchesSearch;
     });
   });
 

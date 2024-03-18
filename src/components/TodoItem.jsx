@@ -19,7 +19,7 @@ const TodoItem = ({ todo, index }) => {
   return (
     <li className="flex  px-4 sm:items-center justify-between border-b-2 border-slate-900 py-2 gap-4  w-[100%]">
       <div className="flex items-center justify-start ">
-        <span className="mr-4  text-gray-500">{index + 1}.</span>
+        <span className="mr-2  text-gray-500">{index + 1}.</span>
         <span
           className={` break-all ${
             todo.completed ? "line-through text-gray-500" : ""

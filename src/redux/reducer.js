@@ -6,9 +6,10 @@ import {
   MARK_INCOMPLETE,
   FILTER_TODOS,
   MARK_ALL_COMPLETED,
+  UPDATE_SEARCH_TERM,
 } from "./actionTypes";
 
-const initialState = { todos: [], filter: "ALL" };
+const initialState = { todos: [], filter: "ALL", searchTerm: "" };
 
 const todoReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -19,6 +20,7 @@ const todoReducer = (state = initialState, action) => {
           { text: action.payload.text, completed: false },
         ],
         filter: state.filter,
+        searchTerm: state.searchTerm,
       };
 
     case TOGGLE_TODO:
@@ -64,6 +66,12 @@ const todoReducer = (state = initialState, action) => {
         searchTerm: state.searchTerm,
       };
 
+    case UPDATE_SEARCH_TERM:
+      return {
+        todos: state.todos,
+        filter: state.filter,
+        searchTerm: action.payload.searchTerm,
+      };
 
     case MARK_ALL_COMPLETED:
       return {
