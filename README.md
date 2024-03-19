@@ -1,6 +1,6 @@
 <h1 align="center" id="title">TODO APP</h1>
 
-<h4> This is a simple Todo application built using React, Tailwind CSS, and Redux, and bootstrapped with Vite. It allows users to add tasks, mark them as completed or incomplete, filter tasks based on their completion status, delete tasks, and mark all tasks as completed.</h4>
+<h4> This is a simple Todo application built using React, Tailwind CSS, and Redux, and bootstrapped with Vite. It allows users to add tasks, mark them as completed or incomplete, filter tasks based on their completion status, delete tasks, mark all tasks as completed, and search for tasks from the todo list.</h4>
 
 ## 🖥️ Tech Stack
 
@@ -29,6 +29,7 @@
 - Filter tasks based on completion status (Completed, Incompleted, Default)
 - Delete tasks
 - Mark all tasks as completed
+- Search tasks from the todo list
 
 ## Technologies Used
 
