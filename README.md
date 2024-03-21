@@ -31,12 +31,6 @@
 - Mark all tasks as completed
 - Search tasks from the todo list
 
-## Technologies Used
-
-- React
-- Tailwind CSS
-- Redux
-
 ## Installation
 
 ### Clone the repository:
